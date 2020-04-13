@@ -1,9 +1,10 @@
 #!/bin/bash
 
+# LIB_pluginbuilder.sh v1.0
+# Will Green / 03-09-20202
+
 # Script to generate fresh plugin-cfg.xml files for listed servers, merge them together info a single
 # plugin-cfg.xml, and to finally push the plugin to the listed webserver(s).
-# Will Green / 03-09-2020
-# v1.0
 
 LIBERTYSERVERS="server1 server2 server3 server4 server5"
 APPSERVERS="appserver-host-1 appserver-host-2"
