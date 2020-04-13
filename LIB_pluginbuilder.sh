@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # LIB_pluginbuilder.sh v1.0
-# Will Green / 03-09-20202
+# Will Green / 03-09-2020
 
 # Script to generate fresh plugin-cfg.xml files for listed servers, merge them together info a single
 # plugin-cfg.xml, and to finally push the plugin to the listed webserver(s).
