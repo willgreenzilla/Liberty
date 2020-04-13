@@ -70,8 +70,8 @@ push()
 
                 echo -e "\nReplacement complete!\n\nBouncing IHS...\n"
 
-                ssh -q wasadmin@$WEBSERVER /bin/bash ~/local/WAS_sysadmin.sh stop
-                ssh -q wasadmin@$WEBSERVER /bin/bash ~/local/WAS_sysadmin.sh start
+                ssh -q wasadmin@$WEBSERVER /bin/bash /opt/IBM/wasadmin/HTTPServer/bin/apachectl stop;sleep 3s;/bin/bash /opt/IBM/wasadmin/HTTPServer/bin/adminctl stop
+                ssh -q wasadmin@$WEBSERVER /bin/bash /opt/IBM/wasadmin/HTTPServer/bin/adminctl start;sleep 3s;/bin/bash /opt/IBM/wasadmin/HTTPServer/bin/apachectl start
 
                 echo -e "\nIHS has been bounced on ${WEBSERVER} and new plugin-cfg.xml loaded!\n"
 
